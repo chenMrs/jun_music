@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>歌手列表-君易凡音乐</title>
+    <link href="css/singer_list.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/new_file.css" />
+    <script type="text/javascript" src="js/action.js"></script>
+</head>
+<body onLoad="show(1);">
+    <!-- 头部   音乐馆    -->
+		<div class="mod_header">
+   			 <div class="section_inner">
+	       		<h1 class="qqmusic_title"><a href="#"><img src="img/logo3.png" class="qqmusic_logo"/></a></h1>
+	        <!-- 导航 S -->
+		        <ul class="mod_top_nav">
+		            <li class="top_nav__item">
+		                <a href="index.html" class="top_nav__link top_nav__link--current" title="音乐馆">音乐馆</a>
+		            </li>
+		            <li class="top_nav__item">
+		                <a href="profile.html" class="top_nav__link" title="我的音乐">我的音乐</a>
+		            </li> 
+		            <li class="top_nav__item top_nav__item--subnav">
+                <a href="#" class="top_nav__link js_toDownload" title="客户端" >客户端</a>
+                    </li>
+                    <li class="top_nav__item">
+	        <a href="#" data-stat="y_new.top.artists" class="top_nav__link js_nav_click" title="开放平台" >开放平台</a>
+	     			</li>
+	    			<li class="top_nav__item">
+	        <a href="#" class="top_nav__link" title="VIP" >VIP</a>
+	    			</li>
+       			 </ul>
+
+
+		     
+      		  </div>
+        <hr />
+        <!--首页-->
+	        <div  class="top_nav_item2">
+			    <ul class="mod_top_subnav" style="display:;">
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">首页</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="singer_list.html" class="top_subnav__link">歌手</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="toplist.html" class="top_subnav__link">排行榜</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="login.html" class="top_subnav__link">登录</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="/#" class="top_subnav__link">新碟</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">分类歌单</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">电台</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">MV</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">数字专辑</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">票务</a>
+					</li>
+			    </ul>
+		    </div>
+	    </div>
+	    
+    <div class="mod_singer_list_image">
+        <img src="images/singer_list.png">
+    </div>
+    <div class="main">
+        <div class="mod_singer_tag">
+            <div class="mod_singer_tag_list">
+                <div class="mod_singer_tagList1">
+                    <a href="#singer_list" class="List0">热门</a>
+                    <a href="#singer_list" class="List1">A</a>
+                    <a href="#singer_list" class="List1">B</a>
+                    <a href="#singer_list" class="List1">C</a>
+                    <a href="#singer_list" class="List1">D</a>
+                    <a href="#singer_list" class="List1">E</a>
+                    <a href="#singer_list" class="List1">F</a>
+                    <a href="#singer_list" class="List1">G</a>
+                    <a href="#singer_list" class="List1">H</a>
+                    <a href="#singer_list" class="List1">I</a>
+                    <a href="#singer_list" class="List1">J</a>
+                    <a href="#singer_list" class="List1">K</a>
+                    <a href="#singer_list" class="List1">L</a>
+                    <a href="#singer_list" class="List1">M</a>
+                    <a href="#singer_list" class="List1">N</a>
+                    <a href="#singer_list" class="List1">O</a>
+                    <a href="#singer_list" class="List1">P</a>
+                    <a href="#singer_list" class="List1">Q</a>
+                    <a href="#singer_list" class="List1">R</a>
+                    <a href="#singer_list" class="List1">S</a>
+                    <a href="#singer_list" class="List1">T</a>
+                    <a href="#singer_list" class="List1">U</a>
+                    <a href="#singer_list" class="List1">V</a>
+                    <a href="#singer_list" class="List1">W</a>
+                    <a href="#singer_list" class="List1">X</a>
+                    <a href="#singer_list" class="List1">Y</a>
+                    <a href="#singer_list" class="List1">Z</a>
+                    <a href="#singer_list" class="List1">#</a>
+                </div>
+                <div class="mod_singer_tagList2">
+                    <a href="#singer_list" class="List3">全部</a>
+                    <a href="#singer_list" class="List4">内地</a>
+                    <a href="#singer_list" class="List4">港台</a>
+                    <a href="#singer_list" class="List4">欧美</a>
+                    <a href="#singer_list" class="List4">日本</a>
+                    <a href="#singer_list" class="List4">韩国</a>
+                    <a href="#singer_list" class="List4">其他</a>
+                </div>
+                <div class="mod_singer_tagList3">
+                    <a href="#singer_list" class="List5">全部</a>
+                    <a href="#singer_list" class="List6">男</a>
+                    <a href="#singer_list" class="List6">女</a>
+                    <a href="#singer_list" class="List6">组合</a>
+                </div>
+                <div class="mod_singer_tagList4">
+                    <a href="#singer_list" class="List7">全部</a>
+                    <a href="#singer_list" class="List8">流行</a>
+                    <a href="#singer_list" class="List8">嘻哈</a>
+                    <a href="#singer_list" class="List8">摇滚</a>
+                    <a href="#singer_list" class="List8">电子</a>
+                    <a href="#singer_list" class="List8">民谣</a>
+                    <a href="#singer_list" class="List8">R&B</a>
+                    <a href="#singer_list" class="List8">民歌</a>
+                    <a href="#singer_list" class="List8">轻音乐</a>
+                    <a href="#singer_list" class="List8">爵士</a>
+                    <a href="#singer_list" class="List8">古典</a>
+                    <a href="#singer_list" class="List8">乡村</a>
+                    <a href="#singer_list" class="List8">蓝调</a>
+                </div>
+            </div>
+        </div>
+        <div class="mod_singerList1" id="singerList1">
+            <div class="mod_singer_list">
+                <ul class="singer_list_list">
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="https://y.qq.com/n/yqq/singer/0025NhlN2yWrP4.html#stat=y_new.singerlist.singerpic" class="singer_list_cover">
+                                <img src="images/singer_zhoujielun.png">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">周杰伦</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="https://y.qq.com/n/yqq/singer/001fNHEf1SFEFN.html#stat=y_new.singerlist.singerpic" class="singer_list_cover">
+                                <img src="images/dengziqi.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="https://y.qq.com/n/yqq/singer/001fNHEf1SFEFN.html#stat=y_new.singerlist.singerpic">G.E.M 邓紫棋</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/linjunjie.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">林俊杰</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/lironghao.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">李荣浩</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/xuezhiqian.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">薛之谦</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/zhangjie.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">张杰</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/yiyangqianxi.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">易烊千玺</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/wangsulong.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">汪苏泷</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/zhoushen.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">周深</a>
+                            </h3>
+                        </div>
+                    </li>
+                    <li class="singer_list_item">
+                        <div class="singer_list_item_box">
+                            <a href="#singer_list.html" class="singer_list_cover">
+                                <img src="images/xujiaying.jpg">
+                            </a>
+                            <h3 class="singer_list_title">
+                                <a href="#singer_list">徐佳莹</a>
+                            </h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="singer_list_txt">
+                <li class="singer_list_txt_intem"><a href="intdex.html">周深</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">蒋雪儿</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">BLACKPINK</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">白小白</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">五月天</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">曲肖冰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">许嵩</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">比莉</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">BEYOND</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张远</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">The Chainsmokers</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">艾辰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">蔡徐坤</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">DJ小鱼</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刀郎</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">孙露</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">郭顶</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">周传雄</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李宇春</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">汪苏泷</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">庄心妍</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">胡66</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张靓颖</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">赵雷</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">魏新雨</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">杨宗纬</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刘瑞琦</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">林宥嘉</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张杰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">莫文蔚</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Taylor Swift(泰勒.斯威夫特)</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">吴青峰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">华晨宇</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">易烊千玺</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刘若英</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">宋东野</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">蔡健雅</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">孙燕姿</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Martin Garrix（马丁.盖瑞斯）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">安苏羽</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张韶涵</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Vicetone</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">音阙诗听</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王力宏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈雪凝</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张碧晨</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Sia（希雅）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">米津玄师</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">虞姬</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">魏佳艺</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">许巍</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈小春</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">毛不易</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">梦然</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">赵英俊</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张学友</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈粒</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刘德华</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张信哲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">徐佳莹</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">梁静茹</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李克勤</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张国荣</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">朴树</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张宇</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">谭咏麟</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Alan Walker（艾兰.沃克）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">儿歌</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">邓伦</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Ed Sheeran(艾德.希兰)</a></li>
+            </ul>
+        </div>
+        <div class="mod_singerList2" id="singerList2">
+            <ul class="singer_list_txt">
+                <li class="singer_list_txt_intem"><a href="intdex.html">降央卓玛</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李宗盛</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">麦小兜</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">G-DRAGON（权志龙）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">TWICE</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">HITA</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">任贤齐</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">伍佰 & China Blue</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">季彦霖</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张震岳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">田馥甄</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">EXO</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李健</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">GAI周延</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈慧娴</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">蔡依林</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">韩红</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陶喆</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">汪峰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">那英</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">马健涛</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张芸京</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">梁博</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">A-Lin</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">筷子兄弟</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">徐梦圆</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王菲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">鹿晗</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Charlie Puth（查理.普斯）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">房东的猫</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">蒋蒋</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">肖战</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Billie Eilish</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张敬轩</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">周笔畅</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王俊凯</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">孙子涵</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">潘玮柏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">凤凰传奇</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李玉刚</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">TFBOYS</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">周华健</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王杰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">于文文</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">周兴哲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">简宏亦</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Imagine Dragons（梦龙）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">贺一航</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">S.H.E</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">双笙</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Lady Gaga</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Troye Sivan（特洛耶.希文）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王源</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">叶炫清</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">胡夏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">逃跑计划</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">英雄联盟</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">吴亦凡</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">南征北战</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">K-391</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">银临</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张惠妹</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Calvin Harris</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">杨丞琳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">苏打绿</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">黄子韬</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Avivii（艾维奇）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刘珂矣</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">MAMAMOO</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Two Steps From Hell</a></li>
+            </ul>
+        </div>
+        <div class="mod_singerList3" id="singerList3">
+            <ul class="singer_list_txt">
+                <li class="singer_list_txt_intem"><a href="intdex.html">华语群星</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">奇然</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">F.I.R.飞儿乐队</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">胡彦斌</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">冷漠</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Wiz Khalifa</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Feint</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Olly Murs</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">孙楠</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">曲婉婷</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Ariana Grande</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">焦迈奇</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">LiSA</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">范玮琪</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">鞠婧祎</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">徐良</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">RADWIMPS</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">邓丽君</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Kelly Clsrkson</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李圣杰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">袁娅维</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">TheFatRat</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">郑源</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">萧亚轩</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">韩安旭</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Red Velvet</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">周柏豪</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">广东雨神</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张艺兴</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">艾夫杰尼</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">牛奶咖啡</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">贺敬轩</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">阿肆</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">伯贤</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">林志炫</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">吴雨霏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">金池</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">林子祥</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Selena Gomez</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">黑龙</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李代沫</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">赵紫骅</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">新裤子</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">郁可唯</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">容祖儿</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">何鹏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">半阳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">林忆莲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">卓依婷</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">阿悄</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">周思涵</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈瑞</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王心凌</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">孙亦琪</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">叶倩文</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">云朵</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">叶里</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">六哲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Zedd</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">周慧敏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">承利</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">GALA</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Fall Out Boy</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Lost Frequencies</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">萧敬腾</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王一博</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">许飞</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Linkin Park（林肯公园）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">韩宝仪</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">动力火车</a></li>
+            </ul>
+        </div>
+        <div class="mod_singerList4" id="singerList4">
+            <ul class="singer_list_txt">
+                <li class="singer_list_txt_intem"><a href="intdex.html">云菲菲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刘崇华</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">AGA</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刘惜君</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">冯提莫</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">高进</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">黄平原</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">万妮达</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Cash Cash</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">回音哥</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">谭维维</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">灿烈</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈泓宇</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">圈妹</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Owl City</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Tizzy T</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Tank</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">郑中基</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">海明威</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">丁当</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">水木年华</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">段奥娟</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">梅艳芳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">常石磊</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">谢霆锋</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">洛天依</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">方大同</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">杨坤</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">阿杜</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">赵晨羲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Marshmello</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Bruno Mars</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Rihanna</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">阿桑</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">梁咏琪</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">火箭少女101</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">RISE</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈百强</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">小沈阳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">黄凯芹</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">王嘉尔</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">IU</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">光良</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">姜玉阳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">MstisYahu</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">迪克牛仔</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">鹿先森乐队</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">屠洪刚</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">郑伊健</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">卢冠廷</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">高安</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">郑智化</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Aimer</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">古巨基</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈慧琳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">久石让</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">大神慧</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">伍佰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈柏宇</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">齐秦</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张雨生</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">萧全</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">P！NK</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">DJRE</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">乌兰图雅</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">龙梅子</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">One Direction</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">罗大佑</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">张冬玲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">许冠杰</a></li>
+            </ul>
+        </div>
+        <div class="mod_singerList5" id="singerList5">
+            <ul class="singer_list_txt">
+                <li class="singer_list_txt_intem"><a href="intdex.html">金6</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">花粥</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">萨顶顶</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李玖哲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">大张伟</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">7妹</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">BY2</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Gavin DeGraw</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">笑天</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">新乐尘符</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">CG</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">好妹妹</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">南宫嘉俊</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Zella Day</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">姜育恒</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Janji</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">任素汐</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">崔子格</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">许茹芸</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">威仔</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">佛教歌曲</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">iKON</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">LenKa</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">金沙</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">DJ</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">门丽</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">蔡琴</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈洁丽</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">飞轮海</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">黄龄</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">上官红燕</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">毛阿敏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">太阳</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">叶洛洛</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Pianoboy高至豪</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李玟</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">本兮</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">高胜美</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">夏婉安</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">马博</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">姜鹏</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">南拳妈妈</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">郭靖</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">John Legend（约翰.传奇）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">摩登兄弟</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">无限王者团</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">ITZY</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">黄勇</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">排骨教主</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">庾澄庆</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">青鸟飞鱼</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Dua Lipa</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">陈立农</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李行亮</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">印能法师</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">暴林</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">毛宁</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">硬糖少女303希林娜依.高</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">BTS（防弹少年团）</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">温岚</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">阿木</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">刘小慧</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Soler</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">成龙</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">Twins</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">李易峰</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">小可</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">戴佩妮</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">谢军</a></li>
+                <li class="singer_list_txt_intem"><a href="intdex.html">金南玲</a></li>
+            </ul>
+        </div>
+        <div class="mod_page_nav">
+            <div class="mod_page_nav_intem">
+                <a href="javascript:show(1)" class="nav_intem0" id="intem1">1</a>
+                <a href="javascript:show(2)" class="nav_intem1" id="intem2">2</a>
+                <a href="javascript:show(3)" class="nav_intem1" id="intem3">3</a>
+                <a href="javascript:show(4)" class="nav_intem1" id="intem4">4</a>
+                <span>...</span>
+                <a href="javascript:show(5)" class="nav_intem1" id="intem5">10</a>
+                <a href="singer_list.html" class="nav_intem1" id="intem6">></a>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>

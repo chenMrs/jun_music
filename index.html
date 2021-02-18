@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/new_file.css" />
+<script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+	<!--<div class="total">-->
+		<!-- 头部   音乐馆    -->
+		<div class="mod_header">
+   			 <div class="section_inner">
+	       		<h1 class="qqmusic_title"><a href="#"><img src="img/logo3.png" class="qqmusic_logo"/></a></h1>
+	        <!-- 导航 S -->
+		        <ul class="mod_top_nav">
+		            <li class="top_nav__item">
+		                <a href="#" class="top_nav__link top_nav__link--current" title="音乐馆">音乐馆</a>
+		            </li>
+		            <li class="top_nav__item">
+		                <a href="profile.html" class="top_nav__link" title="我的音乐">我的音乐</a>
+		            </li> 
+		            <li class="top_nav__item top_nav__item--subnav">
+                <a href="#" class="top_nav__link js_toDownload" title="客户端" >客户端</a>
+                    </li>
+                    <li class="top_nav__item">
+	        <a href="#" data-stat="y_new.top.artists" class="top_nav__link js_nav_click" title="开放平台" >开放平台</a>
+	     			</li>
+	    			<li class="top_nav__item">
+	        <a href="#" class="top_nav__link" title="VIP" >VIP</a>
+	    			</li>
+       			 </ul>
+
+
+		     
+      		  </div>
+        <hr />
+        <!--首页-->
+	        <div  class="top_nav_item2">
+			    <ul class="mod_top_subnav" style="display:;">
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">首页</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="singer_list.html" class="top_subnav__link">歌手</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="toplist.html" class="top_subnav__link">排行榜</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="login.html" class="top_subnav__link">登录</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="/#" class="top_subnav__link">新碟</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">分类歌单</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">电台</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">MV</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">数字专辑</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">票务</a>
+					</li>
+			    </ul>
+		    </div>
+	    </div>
+	    <!--  歌单推荐-->
+	    <div class="song_p_back" onmouseover="showw()" onmouseout="disshow()">
+		    <div class="song_p">
+		    	<h1>歌单推荐</h1>
+		    	<div class="song_p_1">
+		    		<ul>
+		    			<li><a href="javascript:show(2)">为你推荐</a></li>
+		    			<li><a href="javascript:show(3)">官方歌单</a></li>
+		    			<li><a href="javascript:show(4)">情歌</a></li>
+		    			<li><a href="javascript:show(5)">网络歌曲</a></li>
+		    			<li><a href="javascript:show(6)">经典</a></li>
+		    			<li><a href="javascript:show(7)" >KTV热歌</a></li>
+		    		</ul>
+		    	</div>
+		    	<!--为你推荐       -->
+		    	<!--<img src="img/播放.png" class="start"/>-->
+		    	<div id="song_p_2" >
+		    		<div class="change"  >
+		    			<a href="javascript:show_random()"><img src="img/左.png" class="label"  style="display: none;"/></a>
+		    		</div>
+		    		<div class="change1"  >
+		    			<a><img src="img/右.png" class="label"  style="display: none;" /></a>
+		    		</div>
+		    		
+		    		<div class="img_1">
+		    			<img src="img/playlist/1.jpg"/>
+		    			
+		    			<div class="text">夜未眠丨始于脸红终于眼红</div>
+		    			<div class="text_b">播放量：400.4万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/2.jpg" />
+		    			<div class="text">治愈女声 | 聆听这世间的美好</div>
+		    			<div class="text_b">播放量100.1万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/3.jpg" />
+		    			<div class="text">抖音精选：听一遍就沦陷的歌</div>
+		    			<div class="text_b">播放量4970.7万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/4.jpg" />
+		    			<div class="text">抖音超热中文歌，不好听算我输</div>
+		    			<div class="text_b">播放量8371.4万</div>
+		    		</div>
+		    	</div>
+		    	<!--官方歌单      -->
+		    	<div id="song_p_3"  style="display: none;">
+		    		<div class="change"  >
+		    			<a href="javascript:show_random()"><img src="img/左.png" class="label"  style="display: none;"/></a>
+		    		</div>
+		    		<div class="change1"  >
+		    			<a><img src="img/右.png" class="label"  style="display: none;" /></a>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/3-1.jfif"/>
+		    			<div class="text">华语| 原住民之歌</div>
+		    			<div class="text_b">播放量4.9万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/3-2.jfif" />
+		    			<div class="text">华语| 早安民谣</div>
+		    			<div class="text_b">播放量8.7万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/3-3.jfif" />
+		    			<div class="text">最·Thundercat</div>
+		    			<div class="text_b">播放量10.9万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/3-4.jfif" />
+		    			<div class="text">华语| 忆故乡</div>
+		    			<div class="text_b">播放量50.9万</div>
+		    		</div>
+		    	</div>
+		    	<!--情歌      -->
+		    	<div id="song_p_4" style="display: none;">
+		    		<div class="change"  >
+		    			<a href="javascript:show_random()"><img src="img/左.png" class="label"  style="display: none;"/></a>
+		    		</div>
+		    		<div class="change1"  >
+		    			<a><img src="img/右.png" class="label"  style="display: none;" /></a>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/2-1.png" />
+		    			<div class="text">吐糟网络节奏：停不下的嗨嗨嗨</div>
+		    			<div class="text_b">播放量75.8万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/2-2.jfif"/>
+		    			<div class="text">网络歌曲·还记得那些最后吗</div>
+		    			<div class="text_b">播放量5万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/2-3.png" />
+		    			<div class="text">「网络歌曲」探索当中的秘密花园</div>
+		    			<div class="text_b">播放量62.7万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/2-4.jfif" />
+		    			<div class="text">盘点那些最具潜力的网络神曲</div>
+		    			<div class="text_b">播放量80.3万</div>
+		    		</div>
+		    	</div>
+		    	<!--网络歌曲      -->
+		    	<div id="song_p_5" style="display: none;">
+		    		<div class="change"  >
+		    			<a href="javascript:show_random()"><img src="img/左.png" class="label"  style="display: none;"/></a>
+		    		</div>
+		    		<div class="change1"  >
+		    			<a><img src="img/右.png" class="label"  style="display: none;" /></a>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/4-1.jfif" />
+		    			<div class="text">温柔华语 | 把故事藏在歌中</div>
+		    			<div class="text_b">播放量200万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/4-2.jfif"  />
+		    			<div class="text">片段 不确定的才会患得患失</div>
+		    			<div class="text_b">播放量400万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/4-3.jfif"  />
+		    			<div class="text">钢琴与流行乐的唯美邂逅『持更』</div>
+		    			<div class="text_b">播放量600万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/4-4.jfif"  />
+		    			<div class="text">【旋律trap】柔情舒缓 心扉舒畅</div>
+		    			<div class="text_b">播放量1000万</div>
+		    		</div>
+		    	</div>
+		    	<!--经典     -->
+		    	<div id="song_p_6" style="display: none;">
+		    		<div class="change"  >
+		    			<a href="javascript:show_random()"><img src="img/左.png" class="label"  style="display: none;"/></a>
+		    		</div>
+		    		<div class="change1"  >
+		    			<a><img src="img/右.png" class="label"  style="display: none;" /></a>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/6-1.jfif"  />
+		    			<div class="text">来自澳洲的乐队之音 掀起你的时代回忆！</div>
+		    			<div class="text_b">播放量50.4万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/6-2.jfif" />
+		    			<div class="text">纪念查克·贝里，回味早期摇滚</div>
+		    			<div class="text_b">播放量70.3万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/6-3.jfif" />
+		    			<div class="text">穿越时空的经典蓝调</div>
+		    			<div class="text_b">播放量300.7万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/6-4.jfif" />
+		    			<div class="text">台湾民歌，最美的年代</div>
+		    			<div class="text_b">播放量300.3万</div>
+		    		</div>
+		    	</div>
+		    	<!--ktv热歌      -->
+		    	<div id="song_p_7" style="display: none;">
+		    		<div class="change"  >
+		    			<a href="javascript:show_random()"><img src="img/左.png" class="label"  style="display: none;"/></a>
+		    		</div>
+		    		<div class="change1"  >
+		    			<a><img src="img/右.png" class="label"  style="display: none;" /></a>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/5-1.jfif" />
+		    			<div class="text">泰式浪漫：你想要的甜蜜幻想</div>
+		    			<div class="text_b">播放量200.1万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/5-2.jfif" />
+		    			<div class="text">【真情流露】2010的声音倾吐芬芳</div>
+		    			<div class="text_b">播放量40.7万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/5-3.jfif" />
+		    			<div class="text">金牌作曲人于逸尧：生活中的止疼药</div>
+		    			<div class="text_b">播放量100.8万</div>
+		    		</div>
+		    		<div class="img_1">
+		    			<img src="img/playlist/5-4.jfif" />
+		    			<div class="text">音乐里那些不言而喻的“我爱你”</div>
+		    			<div class="text_b">播放量200.8万</div>
+		    		</div>
+		    	</div>
+		    	<!--                 -->
+	    	</div>
+	    </div>
+        <!--新歌首发        -->
+        <div class="song_p_back">
+        		<div class="song_p"><h1>新歌首发</h1></div>
+        			<div class="song_p_1_2">
+		    		<ul>
+		    			<li ><a href="javascript:show_1(2)">最新</a></li>
+		    			<li ><a href="javascript:show_1(3)">内地</a></li>
+		    			<li ><a href="javascript:show_1(4)">港台</a></li>
+		    			<li ><a href="javascript:show_1(5)">欧美</a></li>
+		    			<li ><a href="javascript:show_1(6)">韩国</a></li>
+		    			<li ><a href="javascript:show_1(7)" >日本</a></li>
+		    		</ul>
+		    	</div>
+        		<!--最新      -->
+		    	<div id="song_p_2_2" >
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/1-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5 >河滨公园 </h5>
+		    					<h5  class="text_c">李琦</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.26</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src="img/newsong/1-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>怜城辞 《天官赐福》</h5>
+		    					<h5   class="text_c">鹿晗</h5>
+		    				</div>
+		    				<div class="song_new_a_2">05.42</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src="img/newsong/1-3.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>小偷 《温暖的抱抱》</h5>
+		    					<h5 class="text_c">段奥娟</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.12</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src="img/newsong/1-4.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>One In A Million </h5>
+		    					<h5 class="text_c">SURAN (수란)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src="img/newsong/1-5.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>慕然</h5>
+		    					<h5 class="text_c">胡夏</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.52</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src="img/newsong/1-6.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>小偷 《温暖的抱抱》</h5>
+		    					<h5 class="text_c">段奥娟</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.32</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src="img/newsong/1-7.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>人潮里</h5>
+		    					<h5 class="text_c">刘若英</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src="img/newsong/1-8.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>萤火</h5>
+		    					<h5 class="text_c">王蜥</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.48</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src="img/newsong/1-9.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>孔雀翎</h5>
+		    					<h5 class="text_c">于贞</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+		    		</div>
+		    	</div>
+		    	<!--内地        -->
+		    	<div id="song_p_2_3" style="display: none;" >
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src="img/newsong/1-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>怜城辞 《天官赐福》</h5>
+		    					<h5   class="text_c">鹿晗</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/2-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>潘金莲</h5>
+		    					<h5 class="text_c">薛之谦</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.55</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/1-5.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>慕然</h5>
+		    					<h5 class="text_c">胡夏</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/2-4.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>相守</h5>
+		    					<h5 class="text_c">周深</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/2-5.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>人群中的人</h5>
+		    					<h5 class="text_c">李健</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/2-6.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>可乐</h5>
+		    					<h5 class="text_c">王源</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.12</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/2-7.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>逢生</h5>
+		    					<h5 class="text_c">张碧晨</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/1-8.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>萤火</h5>
+		    					<h5 class="text_c">王晰</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.32</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/2-9.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>LOOK FOR ME </h5>
+		    					<h5 class="text_c">满舒克</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+                        </div>
+		    		</div>
+		    	</div>
+                 <!--港台       -->
+		    	<div id="song_p_2_4" style="display: none;" >
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/1-7.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>人潮里</h5>
+		    					<h5 class="text_c">刘若英</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/3-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>至少还有你</h5>
+		    					<h5 class="text_c">BY2</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/3-3.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>星星</h5>
+		    					<h5 class="text_c">陈零九</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/3-4.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>定风波</h5>
+		    					<h5 class="text_c">谭咏麟</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.12</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/3-5.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>所有遗失的东西</h5>
+		    					<h5 class="text_c">泳儿</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/3-6.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>缓缓</h5>
+		    					<h5 class="text_c">张惠妹</h5>
+		    				</div>
+		    				<div class="song_new_a_2">02.42</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/3-7.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>你最珍贵</h5>
+		    					<h5 class="text_c">李克勤/谭晶</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.32</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/3-8.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>新时界</h5>
+		    					<h5 class="text_c">阿爆</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.22</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/3-9.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Crossing Borders</h5>
+		    					<h5 class="text_c">Soler</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.52</div>
+                        </div>
+		    		</div>
+		    	</div>
+                <!--欧美       -->
+		    	<div id="song_p_2_5" style="display: none;" >
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src="img/newsong/4-1.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Anyone</h5>
+		    					<h5 class="text_c">Justin Bieber</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.12</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/4-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Better Than Feeling</h5>
+		    					<h5 class="text_c">Olivia O'Brien</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/4-3.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>THE BADDEST</h5>
+		    					<h5 class="text_c">K/DA / 田小娟 (전소연) </h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.46</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/4-4.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Love Not War </h5>
+		    					<h5 class="text_c">Jason Derulo </h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.22</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/4-5.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Enough Of You</h5>
+		    					<h5 class="text_c">Tujamo</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/4-6.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Space Melody </h5>
+		    					<h5 class="text_c">VIZE </h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/4-7.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>i miss u</h5>
+		    					<h5 class="text_c">Jax Jones / Au/Ra"</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.12</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/4-8.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Afterglow</h5>
+		    					<h5 class="text_c">Ed Sheeran</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.32</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/4-8.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Easy</h5>
+		    					<h5 class="text_c">Troye Sivan</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+		    		</div>
+		    	</div>
+                <!--韩国       -->
+		    	<div id="song_p_2_6"  style="display: none;">
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src="img/newsong/5-1.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Switch to me </h5>
+		    					<h5 class="text_c">朴振荣 (박진영)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/5-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Call Me Anytime</h5>
+		    					<h5 class="text_c">EDEN (이든) </h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.22</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/5-3.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>그냥 집에 있자</h5>
+		    					<h5 class="text_c">Woody (우디)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.12</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/5-4.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>One In A Million</h5>
+		    					<h5 class="text_c">SURAN (수란)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.12</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/5-5.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Aurora</h5>
+		    					<h5 class="text_c">Maktub (마크툽)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.32</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/5-6.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>사랑할 땐 보이지 않던  </h5>
+		    					<h5 class="text_c">Elaine (일레인) </h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.12</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/5-7.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Snow Melts</h5>
+		    					<h5 class="text_c">Junoflo (주노플로)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/5-8.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>새해 복, 새 행복</h5>
+		    					<h5 class="text_c">하상욱</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.12</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/5-9.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>잠재력</h5>
+		    					<h5 class="text_c">D.Ark (디아크)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.48</div>
+                        </div>
+		    		</div>
+		    	</div>        
+                 <!--日本        -->
+		    	<div id="song_p_2_7"  style="display: none;">
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src="img/newsong/6-1.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>怪物 《动物狂想曲 第二季》</h5>
+		    					<h5 class="text_c">YOASOBI (ヨアソビ)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.26</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/6-2.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Late Show</h5>
+		    					<h5 class="text_c">sumika</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/6-3.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Sweet Hug </h5>
+		    					<h5 class="text_c">宇野実彩子 (うの みさこ)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.42</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/6-4.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>轍～Wadachi～ </h5>
+		    					<h5 class="text_c">SPYAIR </h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.22</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/6-5.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>Free Bird</h5>
+		    					<h5 class="text_c">c_tx_thin singer_name</h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.28</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/6-6.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>title="クラクト"</h5>
+		    					<h5 class="text_c">夏川椎菜 </h5>
+		    				</div>
+		    				<div class="song_new_a_2">03.42</div>
+                        </div>
+		    		</div>
+		    		<div class="song_new_1">
+		    			<div class="song_new_a">
+		    				<img src= "img/newsong/6-7.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>道楽心情</h5>
+		    					<h5 class="text_c">DOES (ドーズ)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">02.42</div>
+		    			</div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/6-8.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>ボクたちの電光石火</h5>
+		    					<h5 class="text_c">GReeeeN (グリーン)</h5>
+		    				</div>
+		    				<div class="song_new_a_2">02.32</div>
+                        </div>
+                        <div class="song_new_a">
+                        	<img src= "img/newsong/6-9.jpg">
+		    				<div class="song_new_a_1">
+		    					<h5>愛を米て</h5>
+		    					<h5 class="text_c">米米CLUB</h5>
+		    				</div>
+		    				<div class="song_new_a_2">04.22</div>
+                        </div>
+		    		</div>
+		    	</div>        
+         
+        </div>
+	     <!--新碟首发        -->
+        <div class="song_p_back_1">
+        		<div class="song_p"><h1>新碟首发</h1></div>
+        			<div class="song_p_1_2">
+		    		<ul>
+		    			<li ><a href="javascript:show_3(2)">最新</a></li>
+		    			<li ><a href="javascript:show_3(3)">内地</a></li>
+		    			<li ><a href="javascript:show_3(4)">欧美</a></li>
+		    			<li ><a href="javascript:show_3(5)">韩国</a></li>
+		    			<li ><a href="javascript:show_3(6)" >日本</a></li>
+		    			<li ><a href="javascript:show_3(7)">其他</a></li>
+		    		</ul>
+		    	</div>
+        		<!--最新      -->
+        		<div id="song_3_2" >
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+	        				<img src="img/cd/1-1.jpg"/>
+	        				<div >不知所错</div>
+			    			<div class="txt">万能和弦</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-2.jpg"/>
+	        				<div >他们沿着城墙奔跑</div>
+			    			<div class="txt">刘惜君</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-3.jpg"/>
+	        				<div >不要理我</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-4.jpg"/>
+	        				<div >世界</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-5.jpg"/>
+	        				<div >旧账</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-66.jpg"/>
+	        				<div >美好</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-7.jpg"/>
+	        				<div >无人指导</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-8.jpg"/>
+	        				<div >丑八怪</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-9.jpg"/>
+	        				<div >今天我要嫁给你了</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-10.jpg"/>
+	        				<div >明天我要嫁给你了</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        		</div>
+	            <!--内地      -->
+        		<div id="song_3_3" style="display: none;">
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+	        				<img src="img/2-2.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        		</div>
+	          	<!--欧美      -->
+        		<div id="song_3_4" style="display: none;">
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+	        				<img src="img/2-3.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        		</div>
+             	<!--韩国      -->
+        		<div id="song_3_5" style="display: none;">
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+	        				<img src="img/2-4.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        		</div>
+            	<!--日本      -->
+        		<div id="song_3_6" style="display: none;">
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+	        				<img src="img/2-5.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        		</div>
+               	<!--其他      -->
+        		<div id="song_3_7" style="display: none;">
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+	        				<img src="img/2-6.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        			<div class="song_2_3_top">
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        				<div class="song_2_3_new">
+        					<img src="img/cd/1-1.jpg"/>
+	        				<div >1</div>
+			    			<div class="txt">播放量200万</div>
+        				</div>
+        			</div>
+        		</div>
+				
+        </div>
+	     <!--排行榜-->
+	     <div class="song_p_number">
+	     	<div class="song_p"><h1>排行榜</h1></div>
+	     	<div class="number">
+	     		<div class="number1">
+	     			<div class="number_top">
+	     				<h3>巅峰榜</h3>
+	     				<a><h1>热歌</h1></a>
+	     			</div>
+	     			<div class="number_bottom2"><hr></div>
+                    <div class="number_bottom">
+                    	<div class="number_bottom1">
+                    		<p>1.踏山河</p>
+                    		<p>&nbsp;&nbsp;是七叔呢</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>2.醒不来的梦</p>
+                    		<p>&nbsp;&nbsp;回小仙</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>3.四季予你</p>
+                    		<p>&nbsp;&nbsp;程响</p>
+                    	</div>
+                    </div>
+	     		</div>
+	     		<div class="number2">
+	     			<div class="number_top">
+	     				<h3>巅峰榜</h3>
+	     				<a><h1>新歌</h1></a>
+	     			</div>
+	     			<div class="number_bottom2"><hr></div>
+                    <div class="number_bottom">
+                    	<div class="number_bottom1">
+                    		<p>1.送你一朵小红花</p>
+                    		<p>&nbsp;&nbsp;赵英俊</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>2.和光同尘</p>
+                    		<p>&nbsp;&nbsp;周深</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>3.痴情冢</p>
+                    		<p>&nbsp;&nbsp;邓伦</p>
+                    	</div>
+                    </div>
+	     		</div>
+	     		<div class="number3">
+	     			<div class="number_top">
+	     				<h3>巅峰榜</h3>
+	     				<a><h1>流行指数</h1></a>
+	     			</div>
+	     			<div class="number_bottom2"><hr></div>
+                    <div class="number_bottom">
+                    	<div class="number_bottom1">
+                    		<p>1.白月光与朱砂痣</p>
+                    		<p>&nbsp;&nbsp;大籽</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>2.四季予你</p>
+                    		<p>&nbsp;&nbsp;程响</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>3.冬季限定</p>
+                    		<p>&nbsp;&nbsp;王齐铭WatchMe</p>
+                    	</div>
+                    </div>
+	     		</div>
+	     		<div class="number4">
+	     			<div class="number_top">
+	     				<h3>巅峰榜</h3>
+	     				<a><h1>欧美</h1></a>
+	     			</div>
+	     			<div class="number_bottom2"><hr></div>
+                    <div class="number_bottom">
+                    	<div class="number_bottom1">
+                    		<p>1.Afterglow</p>
+                    		<p>&nbsp;&nbsp;Ed Sheeran</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>2.Space Melody</p>
+                    		<p>&nbsp;&nbsp;VIZE</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>3.willow</p>
+                    		<p>&nbsp;&nbsp;Taylor Swift</p>
+                    	</div>
+                    </div>
+	     		</div>
+	     		<div class="number5">
+	     			<div class="number_top">
+	     				<h3>巅峰榜</h3>
+	     				<a><h1>韩国</h1></a>
+	     			</div>
+	     			<div class="number_bottom2"><hr></div>
+                    <div class="number_bottom">
+                    	<div class="number_bottom1">
+                    		<p>1.CRY FOR ME</p>
+                    		<p>&nbsp;&nbsp;TWICE (트와이스)</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>2.Black Mamba</p>
+                    		<p>&nbsp;&nbsp;aespa (에스파)</p>
+                    	</div>
+                    	<div class="number_bottom1">
+                    		<p>3.Panorama</p>
+                    		<p>&nbsp;&nbsp;IZ*ONE (아이즈원)</p>
+                    	</div>
+                    </div>
+	     		</div>     		
+	     	</div>
+	     </div>
+         <!--精彩推荐-->
+        <div class="container">
+        	<h1>精彩推荐</h1>
+        	<div class="pxs_slider_wrapper">
+        		<ul class="pxs_slider">
+					<li> <img src="img/new/1-1.jpg" /> </li>
+					<li> <img src="img/new/1-2.jpg" /> </li>
+					<li> <img src="img/new/1-3.jpg" /> </li>
+					<li> <img src="img/new/1-4.jpg" /> </li>
+					<li> <img src="img/new/1-5.jpg" /> </li>
+					<li> <img src="img/new/1-6.jpg" /> </li>
+				</ul>
+        	</div>
+        </div>
+        	
+        <!--页脚        -->
+        <div class="footer">
+        	<div class="footer_info">
+        		<div class="footer_download">
+        			<h3 class="footer_tit">下载QQ音乐客户端</h3>
+        			<ul class="footer_download_list">
+	                    <li class="footer_download_list__item">
+	                    	<a href="#" class="js_footer_down" >
+		                    	<i class="icon_qm_pc">
+		                    		<span class="icon_txt">QQ音乐</span>
+		                    	</i>PC版
+	                    	</a>
+	                    </li>
+	                    <li class="footer_download_list__item">
+	                    	<a href="#" class="js_footer_down" >
+		                    	<i class="icon_qm_mac">
+		                    		<span class="icon_txt">QQ音乐</span>
+		                    	</i>Mac版
+	                    	</a>
+	                    </li>
+	                    <li class="footer_download_list__item">
+	                    	<a href="#" class="js_footer_down" >
+	                    		<i class="icon_qm_android">
+	                    			<span class="icon_txt">QQ音乐</span>
+	                    		</i>Android版
+	                    	</a>
+	                    </li>
+	                    <li class="footer_download_list__item">
+	                    	<a href="#" class="js_footer_down" >
+	                    		<i class="icon_qm_iphone">
+	                    			<span class="icon_txt">QQ音乐</span>
+	                    		</i>iPhone版
+	                    	</a>
+	                    </li>
+                	</ul>
+        		</div>
+        		<div class="footer_product">
+        			<h3 class="footer_tit">特色产品</h3>
+        			<ul class="footer_product_list">
+                    <li class="footer_product_list__item footer_product_list__item--pic">
+                    	<a href="#"  class="js_other_link" >
+                    		<i class="icon_qm_kg">
+                    			
+                    		</i>全民K歌
+                    	</a>
+                    </li>
+                    <li class="footer_product_list__item footer_product_list__item--pic">
+                    	<a href="#" class="js_other_link" >
+                    		<i class="icon_qm_ss">
+                    			
+                    		</i>Super Sound
+                    	</a>
+                    </li>
+                    <li class="footer_product_list__item footer_product_list__item--pic">
+                    	<a href="#"  class="js_other_link" >
+                    	<i class="icon_qm_qp">
+                    		
+                    	</i>QPlay
+                    </a>
+                    </li>
+                    <li class="footer_product_list__item footer_product_list__item--pic">
+                    	<a href="javascript:void(0);" class="js_footer_down" >
+                    		<i class="icon_qm_fan">
+                    			
+                    		</i>Fan直播伴侣
+                    	</a></li>
+                    
+                </ul>
+        		</div>
+        		<div class="footer_link">
+        			<h3 class="footer_tit">合作链接</h3>
+        			<div class="font_ul">
+        			<ul class="footer_link_list">
+	                    <li class="footer_link_list__item"><a href="#" class="js_other_link" >CJ ENM</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >腾讯视频</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >手机QQ空间</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >最新版QQ</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >腾讯社交广告</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >电脑管家</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >QQ浏览器</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >腾讯微云</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >腾讯云</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >企鹅FM</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >智能电视网</a></li>
+	                    <li class="footer_link_list__item"><a href="#"  class="js_other_link" >当贝市场</a></li>
+                	</ul>
+                </div>
+        		</div>
+        		<div class="footer_group">
+        			<div class="footer_group1">
+        				<h3 class="footer_tit">开放平台</h3>
+        				<ul class="footer_platform_list">
+	                        <li class="footer_platform_list__item">
+	                        	<a href="#" target="_blank" class="js_other_link" >QQ音乐开放平台</a>
+	                        	</li>
+	                        <li class="footer_platform_list__item">
+	                        	<a href="#" class="js_other_link" >腾讯音乐人</a>
+	                        </li>
+                    	</ul>
+        			</div>
+        			<div class="footer_group2">
+        				<h3 class="footer_tit">TME集团官网</h3>
+        				<ul class="footer_platform_list">
+	                        <li class="footer_platform_list__item">
+	                        	<a href="#" target="_blank" class="js_other_link" >腾讯音乐</a>
+	                        </li>
+                    	</ul>
+        			</div>
+        		</div>
+        	</div>
+            <div class="footer_copyright">
+	            <p>
+					<a href="http://www.tencent.com/" >关于腾讯</a> | 
+					<a href="http://www.tencent.com/index_e.shtml">About Tencent</a> | 
+					<a href="http://www.qq.com/contract.shtml" >服务条款</a> | 
+					<a href="http://y.qq.com/y/static/tips/service_tips.html" >用户服务协议</a> | 
+					<a href="https://y.qq.com/m/client/intro/privacy.html" >隐私政策</a> | 
+					<a href="https://y.qq.com/vip/right_declare/index.html">权利声明</a> | 
+					<a href="http://www.tencentmind.com/" >广告服务</a> | 
+					<a href="http://hr.tencent.com/" >腾讯招聘</a> | 
+					<a href="http://service.qq.com/" >客服中心</a> | 
+					<a href="http://www.qq.com/map/" >网站导航</a>
+				</p>
+				<p>Copyright © 1998 - <script type="text/javascript">document.write(new Date().getFullYear());</script>2021 Tencent. <a target="_blank" href="http://www.tencent.com/en-us/le/copyrightstatement.shtml" rel="noopener nofollow" title="All Rights Reserved.">All Rights Reserved.</a></p>
+				<p>腾讯公司 <a target="_blank" href="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml" rel="noopener nofollow" title="版权所有">版权所有</a> <a target="_blank" href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" rel="noopener nofollow" title="腾讯网络文化经营许可证">腾讯网络文化经营许可证</a></p>
+				
+            </div>
+        </div>	
+	<!--</div>-->
+	</body>
+</html>

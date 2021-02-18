@@ -1,0 +1,598 @@
+body{
+	margin-right: 15%;
+}
+.mod_header {
+    /*background-color: red;*/
+    position: relative;
+    z-index: 4;
+    height: 142px;
+    /*width: 1900px;*/
+    margin: auto;
+}
+.section_inner{
+	height: 90px;
+	/*width: 1900px;*/
+    text-align: center;
+    margin: auto;
+    /*background-color: goldenrod;*/
+}
+.song_p_1 ul {
+	margin-left: 200px;
+}
+
+.top_nav_item2 {
+	height: 30px;
+	/*width: 1900px;*/
+	text-align: center;
+	margin: auto;
+	/*background-color: greenyellow;*/
+}
+div {
+    display: block;
+}
+.qqmusic_logo{
+	float: left;
+}
+/*.qqmusic_logo img{
+	display: block;
+	height: 70px;
+	width: 170px;
+	object-fit: cover;
+}*/
+.top_nav__link{
+	float: left;
+}
+.top_subnav__link{
+	float: left;
+	margin-left: 50px;
+}
+.top_nav__link--current:focus {
+    /*background-color: #31c27c;*/
+    color: #fff;
+}
+.top_nav__link {
+    display: block;
+    padding: 0 20px;
+    line-height: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 18px;
+}
+.top_nav__link:focus{
+	 background-color: #31c27c;
+    color: #fff;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+	color: ; #31c27c
+}
+li {
+    list-style: none;
+}
+.top_subnav__item{
+	float: none;
+}
+
+/*歌单推荐*/
+.song_p_back{
+	height: 532px;
+	background-color: #ddd;
+	border-radius: 5px;
+	width: 1500px;
+	/*margin: 10px auto;*/
+}
+
+.song_p{
+	height: 60px;
+	text-align: center;
+	width: 1500px;
+	 margin:auto;
+	/*background-color: red;*/
+	line-height: 60px;
+	font-family: Tahoma,Arial,sans-serif;
+}
+.song_p_1{
+	height: 20px;
+	width: 1200px;
+	text-align: center;
+	/*background-color: red;*/
+    line-height: 20px;
+    /*margin-left: 20%;*/
+   margin: auto;
+}
+.song_p_1 li{
+	float: left;
+	margin-left: 50px;
+}
+.song_p_1 a:focus{
+	color: #31c27c;
+}
+
+#song_p_2,#song_p_3,#song_p_4,#song_p_5,#song_p_6,#song_p_7{
+	height: 400px;
+	width: 1450px;
+	/*background-color: royalblue;*/
+	margin-left: 10%;
+	/*margin-top: 20px;*/
+	margin: 20px auto;
+	position: absolute;
+}
+.img_1{
+	height: 340px;
+	width: 300px;
+	/*background-color: indianred;*/
+	float: left;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.img_1 img{
+	display: block;
+	margin-left: 50px;
+	object-fit: cover;
+	height: 250px;
+	width:250px;
+}
+/*.start{
+	display: block;
+	height: 20px;
+	width: 20px;
+	object-fit: cover;
+	position: relative;
+	margin-top: 100px;
+	float: left;
+}*/
+.text{
+	height: 25px;
+	/*background-color: red;*/
+	line-height: 28px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 50px;
+}
+.text_b{
+	color: #999;
+    /*background-color: green;*/
+    height: 50px;
+	line-height: 10px;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 50px;
+}
+.change{
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-top: 100px;
+}
+.change img{
+	display: block;
+	height: 50px;
+	width: 50px;
+	object-fit: cover;
+    /*float: left;*/
+    /*margin-left: -20px;*/
+}
+.change1{
+	height: 50px;
+	width: 50px;
+	float: right;
+	margin-top: 100px;
+}
+.change1 img{
+	display: block;
+	height: 50px;
+	width: 50px;
+	object-fit: cover;
+    /*float: left;*/
+    /*margin-left: -20px;*/
+}
+
+/*新歌*/
+.song_p_section{
+	height: 556px;
+	width: 1200px;
+	margin: auto;
+	/*background-color: royalblue;*/
+}
+.song_p_1_2{
+	height: 20px;
+	width: 1200px;
+	text-align: center;
+	/*background-color: red;*/
+    line-height: 20px;
+    /*margin-left: 20%;*/
+   margin-left: 450px;
+}
+.song_p_1_2 li{
+	float: left;
+	margin-left: 50px;
+}
+.song_p_1_2 a:focus{
+	color: #31c27c;
+}
+.song_new_1{
+	height: 360px;
+	width: 410px;
+	float: left;
+	margin-left: 50px;
+	/*background-color: red;*/
+	margin-top: 15px;
+}
+.song_new_a{
+	height: 99px;
+	width: 370px;
+	/*background-color: orange;*/
+	margin: 15px;
+	/*border: 1px solid darkgrey;*/
+}
+.song_new_a img{
+	float: left;
+	display: block;
+	height: 90px;
+	width: 90px;
+	object-fit: cover;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+.song_new_a_1{
+	height: 80px;
+	width: 145px;
+    /*background-color: yellow;*/
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    /*line-height: 80px;*/
+}
+.song_new_a_2{
+	height: 85px;
+	width: 38px;
+	float: left;
+	/*background-color: deepskyblue;*/
+	margin-left: 50px;
+	margin-top: 10px;
+	line-height: 85px;
+}
+.text_c{
+		color: #999;
+}
+/*新碟首发*/
+#song_3_2,#song_3_3,#song_3_4,#song_3_5,#song_3_6,#song_3_7{
+	height: 616px;
+	width: 1400px;
+	/*background-color: red;*/
+	/*margin-left: 10%;*/
+	/*margin-top: 20px;*/
+	margin: 20px auto;
+}
+.song_p_back_1{
+	height: 813px;
+	background-color: #ddd;
+	border-radius: 5px;
+	width: 1500px;
+}
+.song_2_3_top{
+	height: 48%;
+	margin-top: 20px;
+	/*background-color: royalblue;*/
+}
+.song_2_3_new{
+	width: 260px;
+	height: 100%;
+	/*background-color: yellow;*/
+	float: left;
+	margin-left: 20px;
+}
+.song_p_back_1 img{
+	object-fit: cover;
+	height: 250px;
+	width:250px;
+}
+.txt{
+	color: #999;
+}
+/*排行榜*/
+.song_p_number{
+	height: 650px;
+	background-color: #ddd;
+	border-radius: 5px;
+	width: 1500px;
+}
+.number{
+	height: 500px;
+	width: 1400px;
+	margin: 10px auto;
+	/*background-color: red;*/
+}
+.number1,.number2,.number3,.number4,.number5{
+	width: 250px;
+	height: 500px;
+	background-image: url(../img/bg2.jpg);
+	float :left;
+	margin-left: 24px;
+	
+}
+.number1{
+	background-position-x: 0 ;
+}
+.number2{
+	background-position-x: -250px ;
+}
+.number3{
+	background-position-x: -500px ;
+}
+.number4{
+	background-position-x: -750px ;
+}
+.number5{
+	background-position-x: -1000px ;
+}
+.number_top{
+	height: 58px;
+	width: 200px;
+	margin: 50px auto;
+	text-align: center;
+	/*background-color: red;*/
+}
+.number_top h3{
+	display: block;
+	margin: 0px;
+	color: white;
+}
+.number_top h1{
+	display: block;
+	margin: 0px;
+	color: white;
+}
+.number_bottom{
+	height: 220px;
+	width: 164px;
+	margin: 10px auto;
+	/*background-color: greenyellow;*/
+}
+.number_bottom1{
+	height: 30%;
+	margin-top: 5px;
+	/*background-color: orange;*/
+}
+.number_bottom2{
+	height:49px;
+	width: 49px;
+	/*background-color: red;*/
+    color: white;
+	margin: auto;
+}
+
+/*页脚*/
+.footer{
+	height: 644px;
+	width: 1500px;
+	background-color: #333;
+	color: #999;
+}
+.footer_info{
+	height: 465px;
+	width: 1200px;
+	/*background-color: orange;*/
+	overflow: hidden;
+    border-bottom: 1px solid #353535;
+    padding-bottom: 45px;
+    margin: auto;
+}
+.footer_download{
+	height: 214px;
+	width: 357px;
+	/*background-color:cornflowerblue;*/
+	margin-left: 10px;
+	margin-top: 30px;
+	float: left;
+	/*left: 10px;*/
+}
+.footer_tit{
+	margin-left: 23px;
+	/*margin-top:20px;*/
+}
+.footer_product,.footer_group2{
+	height: 270px;
+	width: 360px;
+	position: absolute;
+	/*background-color:cornflowerblue;*/
+	margin-left: 420px;
+	float: left;
+}
+.footer_product{
+	margin-top: 30px;
+}
+.footer_link{
+	height: 264px;
+	width: 360px;
+	margin-top: 30px;
+	/*background-color:red;*/
+	position: absolute;
+	margin-left: 880px;
+}
+.footer_group{
+	height: 132px;
+	width: 1200px;
+	/*margin-left: 10px;*/
+	margin-top: 340px;
+	position: absolute;
+	/*background-color: honeydew;*/
+}
+
+.footer_copyright{
+	height: 132px;
+	width: 1200px;
+	/*position: absolute;*/
+	/*background-color:cornflowerblue;*/
+	margin: auto;
+}
+/* 下载QQ音乐客户端*/
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+.footer ul{
+	 display: block;
+    list-style-type: disc;
+}
+.footer_download_list__item {
+    float: left;
+    text-align:center;
+    position: relative;
+}
+.footer_download_list__item li{
+    display: list-item;
+    height: 80px;
+    width:95px;
+    /*background-color: red;*/
+}
+.footer a{
+	color: #999;
+}
+
+.icon_qm_pc,.icon_qm_mac,.icon_qm_iphone,.icon_qm_android,.icon_qm_kg,.icon_qm_qp,.icon_qm_ss,.icon_qm_fan{
+	display: block;
+    margin: 0px 21px 12px;
+    width: 43px;
+    height: 49px;
+    background-image: url(../img/footer@2x.png);
+    /*background-color: gold;*/
+    font-style: italic;
+    
+}
+.icon_txt{
+   font: 0/0 a;
+}
+.icon_qm_pc{
+	background-position: 0px 0;
+}
+.icon_qm_mac{
+	background-position: -93px 0;
+}
+.icon_qm_android{
+	background-position: -186px 0;
+}
+.icon_qm_iphone{
+	background-position: -274px 0;
+}
+
+/*特色产品*/
+.footer_product_list__item--pic {
+    text-align: center;
+    position: relative;
+    margin-right: 0;
+    text-indent: 0;
+}
+.footer_product_list__item{
+    display: inline-block;
+    margin-bottom: 18px;
+    vertical-align: bottom;
+    font-size: 14px;
+}
+.icon_qm_kg{
+	background-position: -368px 0;
+}
+.icon_qm_ss{
+	background-position: -458px 0;
+}
+.icon_qm_qp{
+	background-position: -560px 0;
+}
+.icon_qm_fan{
+	background-position: -648px 0;
+}
+/*合作链接*/
+.footer_link_list__item,.footer_platform_list__item{
+    float: left;
+    min-width: 100px;
+    margin-bottom: 12px;
+    margin-left: 23px;
+}
+.font_ul{
+	height: 200px;
+	width: 340px;
+	/*margin-left: 23px;*/
+}
+.footer_group1,.footer_group2{
+	height: 132px;
+	width: 30%;
+	/*margin-left: 20px;*/
+	/*background-color: red;*/
+	float: left;
+}
+
+
+/*最底下*/
+.footer_copyright {
+    text-align: center;
+    line-height: 28px;
+    /*padding: 24px 0;*/
+    font-size: 15px;
+}
+
+/*精彩推荐*/
+
+.container{
+	width: 1500px;
+	height: 550px;
+	background-color: #ddd;
+}
+.container h1{
+	text-align: center;
+	margin-top: 10px;
+	
+}
+.pxs_slider_wrapper{
+	margin: 0 auto;
+	height: 430px;
+	width: 1080px;
+	overflow: hidden;
+	border: 8px solid transparent;
+	box-shadow: 0px 0px 7px #000;
+	-moz-box-shadow:0px 0px 7px #000;
+	-webkit-box-shadow:0px 0px 7px #000 ;
+	border-radius: 4px;
+	-moz-box-radius:4px;
+	-webkit-box-radius:4px;
+	/*background-color: red;*/
+}
+
+.pxs_slider{
+	width: 6480px;
+	animation: carousel 15s ease-in-out infinite alternate;
+}
+.pxs_slider li{
+	float: left;
+}
+/*.pxs_slider li img{
+	margin: 35px 7px 5px 7px;
+	border: 8px solid transparent;
+	box-shadow: 0px 0px 7px #222;
+	-moz-box-shadow:0px 0px 7px #222;
+	-webkit-box-shadow:0px 0px 7px #222 ;
+	border-radius: 4px;
+	-moz-box-radius:4px;
+	-webkit-box-radius:4px;
+}*/
+@keyframes carousel{
+	0% {transform: translateX(0);}
+	16% {transform: translateX(0);}
+	18%{transform: translateX(-1080px);}
+	32%{transform: translateX(-1080px);}
+	34%{transform: translateX(-2160px);}
+	48%{transform: translateX(-2160px);}
+	50%{transform: translateX(-3240px);}
+	64%{transform: translateX(-3240px);}
+	66%{transform: translateX(-4320px);}
+	80%{transform: translateX(-4320px);}
+	82%{transform: translateX(-5400px);}
+	95%{transform: translateX(-5400px);}
+	98%{transform: translateX(-6480px);}
+}
+.start{
+	position: relative;
+	margin-top: 20px;
+}

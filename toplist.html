@@ -1,0 +1,2638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>流行指数榜</title>
+    <link rel="stylesheet" type="text/css" href="css/toplist_css.css">
+    <link rel="stylesheet" href="css/new_file.css" />
+    <script type="text/javascript">
+        function rule()//显示榜单规则
+        {   
+        var char1="QQ音乐内综合播放得分最高的100首单曲。\n更新时间：每天\n计算方式：综合播放得分对比七天前涨幅";
+        alert(char1);
+        }
+		var max=10;
+		var now=1;
+		function show(num)//显示巅峰榜&地区榜内容
+		{
+			 if(Number(num))
+			{
+				now=num;
+			}
+			for (var i = 0; i <max; i++) {
+				var arr=document.getElementsByClassName("mod_toplist");
+				if(i==now-1)
+                    //如果数字与图片序号一致，则显示
+                    arr[now-1].style.display="";
+				else
+                    //不一致则隐藏
+                    arr[i].style.display="none";		
+			}
+		}
+        var max_song=100,now_song;
+        var flag=true;
+        function which_song(num)
+        {
+            
+            now_song=num;
+            for (var i = 0; i <max_song; i++)
+            {
+                var btn=document.getElementsByClassName("bf_zt");
+                var audio=document.getElementsByClassName("myaudio");
+                if(i==now_song-1)
+                    //如果数字与歌曲序号一致，则找到要播放的歌曲
+                    {
+                       if(flag){
+                         alert('播放');
+                         audio[now_song-1].play();
+                         flag=false;
+                        }
+                       else
+                        {
+                         alert('暂停');
+                         audio[now_song-1].pause();
+                         flag=true;
+                        }
+                    }
+                else
+                {
+                    audio[i].load();              
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="show()">
+    <div class="mod_header">
+   			 <div class="section_inner">
+	       		<h1 class="qqmusic_title"><a href="#"><img src="img/logo3.png" class="qqmusic_logo"/></a></h1>
+	        <!-- 导航 S -->
+		        <ul class="mod_top_nav">
+		            <li class="top_nav__item">
+		                <a href="index.html" class="top_nav__link top_nav__link--current" title="音乐馆">音乐馆</a>
+		            </li>
+		            <li class="top_nav__item">
+		                <a href="profile.html" class="top_nav__link" title="我的音乐">我的音乐</a>
+		            </li> 
+		            <li class="top_nav__item top_nav__item--subnav">
+                <a href="#" class="top_nav__link js_toDownload" title="客户端" >客户端</a>
+                    </li>
+                    <li class="top_nav__item">
+	        <a href="#" data-stat="y_new.top.artists" class="top_nav__link js_nav_click" title="开放平台" >开放平台</a>
+	     			</li>
+	    			<li class="top_nav__item">
+	        <a href="#" class="top_nav__link" title="VIP" >VIP</a>
+	    			</li>
+       			 </ul>
+
+
+		     
+      		  </div>
+        <hr />
+        <!--首页-->
+	        <div  class="top_nav_item2">
+			    <ul class="mod_top_subnav" style="display:;">
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">首页</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="singer_list.html" class="top_subnav__link">歌手</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="toplist.html" class="top_subnav__link">排行榜</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="login.html" class="top_subnav__link">登录</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="/#" class="top_subnav__link">新碟</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">分类歌单</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">电台</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">MV</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">数字专辑</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">票务</a>
+					</li>
+			    </ul>
+		    </div>
+	    </div>
+	    
+
+    <div class="main">
+   
+        <div class="toplist_nav">
+           
+            <dl class="toplist_nav__list">
+                <dt class="toplist_nav__tit">巅峰榜</dt>
+
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(1)">飙升榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(2)">热歌榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(3)">新歌榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(4)">流行指数榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(5)">听歌识曲榜</a></dd>
+            </dl>
+
+            <dl class="toplist_nav__list">
+                <dt class="toplist_nav__tit">地区榜</dt>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(6)">内地榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(7)">香港地区榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(8)">台湾地区榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(9)">欧美榜</a></dd>
+        
+                <dd class="toplist_nav__item"><a href="javascript:;"  class="toplist_nav__link" onclick="javascript:show(10)">韩国榜</a></dd>
+            </dl>
+        </div>
+
+		<div class="mod_toplist dianfengbang1">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">飙升榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                    <img src="images/dianfengbang_1/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">相守</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                    </audio>
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">周深</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:01</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">痴情冢</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">邓伦</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:07</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">2035这是young</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                    </audio>
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">时代少年团</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:36</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">失眠播报</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">林晨阳</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:46</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">相信我</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">刘德华/倪妮</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:05</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">因为你 所以我</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">五月天</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:41</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">想想念念</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">FAFA/雪二</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:01</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">突如其来的爱情</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">李克勤/周深</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:03</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">太阳月亮</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">毛不易</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:09</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_1/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">坠</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">你的大表哥曲甲</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:34</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="mod_toplist dianfengbang2">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">热歌榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">踏山河</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">是七叔呢</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:48</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">醒不来的梦</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">回小仙</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:52</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">四季予你</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">程响</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:08</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">失眠播报</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">林晨阳</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:46</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">燕无歇</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">是七叔呢</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:55</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">错季</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">邱原依</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:35</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">茫</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">李润祺</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:47</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">阿拉斯加海湾</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">蓝心羽</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:57</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">飞鸟和蝉</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">任然</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:56</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_2/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">间距</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">en</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:43</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+		<div class="mod_toplist dianfengbang3">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">新歌榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">如果声音不记得</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">吴青峰</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:58</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">送你一朵小红花</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">赵英俊</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:52</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">和光同尘</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">周深</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:08</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">因为你 所以我</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">五月天</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:41</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">痴情冢</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">邓伦</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:07</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">不舍(《斗罗大陆》动画片尾曲)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">徐佳莹</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:37</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">2035这是young</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">时代少年团</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:36</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                    <div class="songlist__songname_img">
+                                       <img src="images/dianfengbang_3/8.jpg"> 
+                                    </div>
+                                    <div class="songlist__songname_song">
+                                        <a href="#">迟迟</a>
+                                    </div>
+                                    <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">薛之谦</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:15</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">野心</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">薛之谦</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:40</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_3/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">永不失联的爱(正式版)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">单依纯</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:42</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>        
+		
+        <div class="mod_toplist dianfengbang4">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">流行指数榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">渐冷</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">雪二</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:39</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">痴情冢</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">邓伦</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:07</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">2035这是young</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">时代少年团</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:36</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">难生恨</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">DAWN</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:49</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">枕边童话</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">小田音乐社/傲七爷</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:10</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">因为你 所以我</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">五月天</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:41</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                    <div class="songlist__songname_img">
+                                       <img src="images/dianfengbang_4/7.jpg"> 
+                                    </div>
+                                    <div class="songlist__songname_song">
+                                        <a href="#">白月光与朱砂痣</a>
+                                    </div>
+                                    <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">大籽</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:24</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">突如其来的爱情</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">李克勤/周深</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:03</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">太阳月亮</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">毛不易</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:09</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_4/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">观尘歌</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">胡夏</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:44</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mod_toplist dianfengbang5">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">听歌识曲榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">四季予你</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">程响</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:08</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">简单的幸福</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">罗聪</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:09</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">白月光与朱砂痣</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">大籽</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:24</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">烟雨成思</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">杨小壮</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:10</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">NgayTho(DJ版)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">搬运工</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:47</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Ngay Tho(Remix)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">8先生</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:17</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Great(Remix)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">搬运工</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:37</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">和光同尘</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">周深</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:08</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">太阳月亮</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">毛不易</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:09</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/dianfengbang_5/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">观尘歌</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">胡夏</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:44</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mod_toplist diqubang1">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">内地榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">把你揉碎捏成苹果</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">薛之谦</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:35</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">痴情冢</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">邓伦</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:07</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">2035这是young</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">时代少年团</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:36</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">茫</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">李润祺</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:47</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">太阳月亮</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">毛不易</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:09</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">永不失联的爱(正式版)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">单依纯</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:42</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">惊喜</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">任然</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:04</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">相守</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">周深</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:01</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">间距</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">en</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:43</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_1/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">和光同尘</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">周深</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:08</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mod_toplist diqubang2">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">香港地区榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">是但求其爱</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">陈奕迅</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:29</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">相信我</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">刘德华/倪妮</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:05</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Yes I DO(国)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Supper Moment</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:49</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">谁能明白我</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">刘德华</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:36</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">爱情事</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">连诗雅</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:56</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">致明日的舞</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">陈奕迅</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:30</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">浪子心声</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">刘德华</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:52</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">低级趣味</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">卫兰</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:37</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">继续美丽</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">刘德华</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:12</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_2/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">孤独</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">G.E.M.邓紫棋</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:50</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mod_toplist diqubang3">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">台湾地区榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">如果声音不记得</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">吴青峰</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:58</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">因为你 所以我</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">五月天</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:41</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">不舍(《斗罗大陆》动画片尾曲)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">徐佳莹</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:37</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">圣诞之吻</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">陶喆</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:35</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">不是东西</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">萧亚轩</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:10</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">修炼爱情(Jazz Version)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">林俊杰</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">05:31</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">星期三(feat.老高)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">萧敬腾/老高</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:32</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">年轮说</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">吴青峰</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:55</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">我这个人</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">艾怡良</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:50</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_3/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">无别</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">张信哲</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:17</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+
+        <div class="mod_toplist diqubang4">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">欧美榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Afterglow</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Ed Sheeran</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:05</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">willow (moonlit witch version)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Taylor Swift</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:28</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Space Melody</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">VIZE/Leony</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:00</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">PHOENIXFPX</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">FPX</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:52</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">MORE</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(8)">
+                                    <audio src="music/8.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">K/DA</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:37</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Easy</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Troye Sivan</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:3</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Monster</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Justin Bieber</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:58</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Christmas Tree Farm</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Taylor Swift</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:13</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Am I The Only One</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">R3HAB</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:30</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_4/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Is It Just Me?</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Sasha Sloan</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:34</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mod_toplist diqubang5">
+            <div class="toplist__hd">
+                <h1 class="toplist__tit">韩国榜</h1>
+                <a href="#" class="rule" onclick="rule()">榜单规则</a>
+            </div>
+
+            <div class="mod_songlist">
+                <ul class="songlist__header">
+                    <li class="songlist__header_name">歌曲</li>
+                    <li class="songlist__header_author">歌手</li>
+                    <li class="songlist__header_time">时长</li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">1</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/1.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">CRY FOR ME</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(9)">
+                                    <audio src="music/9.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">TWICE (트와이스)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:24</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">2</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/2.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Black Mamba</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(2)">
+                                    <audio src="music/2.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">aespa (에스파)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:54</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number  songlist__number--top">3</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/3.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">Panorama</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(6)">
+                                    <audio src="music/6.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">IZ*ONE (아이즈원)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:42</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">4</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/4.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">딩가딩가 (Dingga)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(3)">
+                                    <audio src="music/3.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">MAMAMOO (마마무)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:59</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">5</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/5.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">游乐园 (Amusement Park)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">伯贤 (백현)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:16</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">6</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/6.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">For You (Feat. Crush)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(5)">
+                                    <audio src="music/5.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">李遐怡 (LEE HI)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:25</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">7</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/7.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">나란히 (Side by Side)</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(10)">
+                                    <audio src="music/10.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">BewhY (비와이)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">02:49</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">8</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/8.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">ON AIR</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(1)">
+                                    <audio src="music/1.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Lil Boi (릴보이)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">04:10</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">9</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/9.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">I CAN'T STOP ME</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(4)">
+                                    <audio src="music/4.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">TWICE (트와이스)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:25</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="songlist__item">
+                            <div class="songlist__number">10</div>
+                            <div class="songlist__songname">
+                                <div class="songlist__songname_img">
+                                   <img src="images/diqubang_5/10.jpg"> 
+                                </div>
+                                <div class="songlist__songname_song">
+                                    <a href="#">눈이 오면 mmm</a>
+                                </div>
+                                <div class="songlist__songname_menu">
+                                    <img src="images/play.jfif" class="bf_zt" onclick="which_song(7)">
+                                    <audio src="music/7.mp3" class="myaudio" controls="controls" loop="false" hidden="true">
+                                </div>
+                            </div>
+                            <div class="songlist__author">
+                                <a href="#">Basick (베이식)</a>
+                            </div>
+                            <div class="songlist__time">
+                                <a href="#">03:05</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

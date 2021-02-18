@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.mod_singer_list_head{
+    width: 100%;
+    height: 145px;
+    background: palevioletred;
+}
+.mod_singer_list_image img{
+    width: 100%;
+    height: 376px;
+}
+.mod_singer_list_image{
+    width: 100%;
+    height: 376px;
+    background: aqua;
+}
+.main{
+    width: 100%;
+    height: 1390px;
+    /*background: skyblue;*/
+}
+/*.footer{
+    width: 100%;
+    height: 642px;
+    background: bisque;
+}*/
+.mod_singer_tag{
+    height: 20%;
+    background: white;
+}
+.mod_singer_tag_list{
+    width: 90%;
+    height: 80%;
+    /*background: bisque;*/
+    margin: 60px auto;
+}
+.mod_singer_tagList1{
+    margin-top: 20px;
+    width: 100%;
+    height: 25%;
+}
+.mod_singer_tagList2{
+    width: 100%;
+    height: 25%;
+}
+.mod_singer_tagList3{
+    width: 100%;
+    height: 25%;
+}
+.mod_singer_tagList4{
+    width: 100%;height: 25%;
+}
+.mod_singer_tagList1 a{
+    width: 26px;
+    height: 26px;
+    text-decoration: none;
+    margin-right: 13px;float: left;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 26px;
+}
+.mod_singer_tagList1 a.List0{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+    height: 26px;
+    background: #31C27C;
+}
+.mod_singer_tagList2 a{
+    width: 30px;
+    height: 26px;
+    text-decoration: none;
+    margin-right: 30px;
+    float: left;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 26px;
+}
+.mod_singer_tagList2 a.List3{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+    height: 26px;
+    background: #31C27C;
+}
+.mod_singer_tagList3 a{
+    width: 30px;
+    height: 26px;
+    text-decoration: none;
+    margin-right: 30px;
+    float: left;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 26px;
+}
+.mod_singer_tagList3 a.List5{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+    height: 26px;
+    background: #31C27C;
+}
+.mod_singer_tagList4 a{
+    width: 45px;
+    height: 26px;
+    text-decoration: none;
+    margin-right: 25px;
+    float: left;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 26px;
+}
+.mod_singer_tagList4 a.List7{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 50px;
+    height: 26px;
+    background: #31C27C;
+}
+.mod_singer_tag a:hover{
+    color: #31C27C;
+}
+.mod_singer_tag a:focus{
+     color: white;
+     background: #31C27C;
+ }
+.mod_singerList1{
+    width: 90%;
+    height: 70%;
+    margin: 20px auto;
+    display: block;
+    /*position: absolute;*/
+    /*background: #31C27C;*/
+}
+.mod_singerList2{
+    width: 90%;
+    height: 40%;
+    margin-left: 60px;
+    /*margin: auto;*/
+    /*background: #31C27C;*/
+    display: none;
+    /*position: absolute;*/
+}
+.mod_singerList3{
+    width: 90%;
+    height: 40%;
+    margin-left: 60px;
+    /*background: #31C27C;*/
+    display: none;
+    /*position: absolute;*/
+}
+.mod_singerList4{
+    width: 90%;
+    height: 40%;
+    margin-left: 60px;
+    /*background: #31C27C;*/
+    display: none;
+    /*position: absolute;*/
+}
+.mod_singerList5{
+    width: 90%;
+    height: 40%;
+    margin-left: 60px;
+    /*background: #31C27C;*/
+    display: none;
+    /*position: absolute;*/
+}
+.mod_singer_list{
+    height: 43%;
+    /*background: orange;*/
+}
+.singer_list_txt{
+    width: 100%;
+    height: 100%;
+    /*background: skyblue;*/
+}
+.mod_page_nav{
+    width: 100%;
+    height: 10%;
+    /*background: green;*/
+}
+.singer_list_list li{
+    width: 227px;
+    height: 222px;
+    /*background: dimgrey;*/
+    float: left;
+    list-style-type: none;
+}
+.singer_list_item_box{
+    width: 200px;
+    height: 200px;
+    /*background: #31C27C;*/
+}
+.singer_list_item_box a{
+    width: 160px;
+    height: 160px;
+    /*background: skyblue;*/
+}
+.singer_list_list img{
+    width: 160px;
+    height: 160px;
+    display: block;
+    border-radius: 126px;
+}
+.singer_list_title{
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+
+    font-weight: lighter;
+}
+.singer_list_title a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*font-size: 18px;*/
+}
+.singer_list_title a:hover{
+    color: #31C27C;
+}
+.singer_list_txt_intem{
+    width: 227px;
+    height: 21px;
+    list-style-type: none;
+    float: left;
+    margin-top: 18px;
+    /*margin-right: 179px;*/
+}
+.singer_list_txt_intem a{
+    width: 50%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: lighter;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mod_page_nav_intem{
+    width: 500px;
+    height: 10%;
+    /*background: orange;*/
+    margin: 10px auto;
+}
+.mod_page_nav_intem a{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #a2a2a2;
+}
+.mod_page_nav_intem span{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #a2a2a2;
+ }
+.mod_page_nav_intem a:hover{
+    color: #fff;
+    background: #31C27C;
+}
+.mod_page_nav_intem span:hover{
+    color: #fff;
+    background: #31C27C;
+}

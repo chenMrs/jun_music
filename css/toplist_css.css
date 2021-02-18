@@ -1,0 +1,257 @@
+body {
+	margin: 0;
+	padding: 0;
+    color: #000;
+    background-color: #f7f3f3;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/*页头和页脚*/
+/*.mod_header{
+	width: 100%;
+	height: 150px;
+	float: left;
+	background-color: yellowgreen;
+}*/
+/*.footer{
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+	float: left;
+	background-color: pink;
+}*/
+/*页头和页脚*/
+
+/*以下部分为主体部分*/
+.main {    
+    padding-top: 60px;
+    /*width: 100%;*/
+    width: 1200px;
+    margin: 0 35px;
+    float: left;
+    position: relative;
+    background-color: #f7f3f3;
+    box-sizing: content-box;
+}
+/*左边边栏部分*/
+.toplist_nav{   
+    float: left;
+    width: 178px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(153,153,153,.2);
+    float: left;
+    display: block;
+}
+.toplist_nav a{
+	text-decoration: none;
+    color: #000;
+}
+.toplist_nav__list{
+    margin-bottom: 20px;
+    width: 180px;
+}
+.toplist_nav__tit{
+    display: block;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    border-bottom: 1px solid #ebebeb;
+    margin: 0 17px 10px;
+    display: block;
+}
+.toplist_nav__item{
+    width: 180px;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.toplist_nav__link {
+    font-size: 15px;
+    display: block;
+    line-height: 22px;
+    padding: 8px 17px;
+}
+.toplist_nav__link:hover{
+    /*background-color: pink;*/
+    color: green;
+}
+/*左边边栏部分*/
+
+/*右侧内容部分*/
+
+.mod_toplist{
+    margin-left: 30px;
+    position: relative;
+    width: 970px;
+    display: block;
+    float: left;
+}
+.mod_toplist a{
+    text-decoration: none;
+    color: #000;
+}
+/*右侧内容部分*/
+
+/*-----------流行指数榜和榜单规则------------*/
+.toplist__hd {
+    line-height: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+.toplist__tit {
+    float: left;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-right: 15px;
+}
+/*-----------流行指数榜和榜单规则------------*/
+
+
+/*-----------歌曲、歌手、时长------------*/
+.mod_songlist {
+    font-size: 14px;
+    overflow: hidden;
+}
+.mod_songlist ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.songlist__header{
+    margin: 0;
+    padding:0;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0,0,0,.01);
+    color: #999;
+}
+.songlist__header li{
+    list-style: none;
+}
+.songlist__header {
+    position: relative;
+    padding-left: 46px;
+    padding-right: 95px;
+}
+.songlist__header_name{
+    padding: :0;
+    margin-left: 120px;
+    width: 60%;
+    /*width: 500px;*/
+    float: left;
+    position: relative;
+    white-space: normal;
+}
+.songlist__header_author {
+    float: left;
+    padding:0;
+    position: relative;
+    padding-left: 15px;
+    width: 20%;
+    /*width: 200px;*/
+    box-sizing: border-box;
+}
+.songlist__header_time{
+    float: left;
+    position: relative;
+    top: 0;
+    width: 50px;
+}
+/*-----------歌曲、歌手、时长------------*/
+
+
+/*-----------下面显示的歌曲10首------------*/
+/*-----------巅峰榜------------*/
+.songlist__item {
+    clear: both;
+    height: 80px;
+    font-size: 0;
+    overflow: hidden;
+}
+.songlist__number {
+    width: 120px;
+    text-align: center;
+    top: 2px;
+    left: 0;
+    float: left;
+    font-size: 24px;
+    color: #333;
+}
+/*前3名歌曲显示颜色不同*/
+.songlist__number--top {
+    color: #ff4222;
+}
+/*----------歌曲部分----------*/
+.songlist__songname{
+    float: left;
+    font-size: 14px;
+    width: 60%;
+    height: 80px;
+    line-height: 80px;
+    box-sizing: border-box;
+}
+.songlist__songname a{
+	font-size: 14px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+.songlist__songname_img{
+	float: left;
+}
+.songlist__songname_img img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+.songlist__songname_song{
+	float: left;
+	width: 180px;
+	height: 80px;
+}
+.songlist__songname_menu{
+	float: right;
+	width: 300px;
+	height: 80px;
+	opacity: 0;
+}
+.songlist__songname_menu img{
+	float: right;
+	/*float:left;*/
+	/*margin-left: 100px;*/
+	margin-top: 15px;
+	margin-right: 50px;
+	width: 40px;
+	height: 40px;
+}
+
+.songlist__songname_menu:hover{
+	opacity: 1;
+}
+/*----------歌曲部分----------*/
+.songlist__author{
+    float: left;
+    padding:0;
+    padding-left: 15px;
+    width: 20%;
+    line-height: 80px;
+    font-size: 14px;
+    box-sizing:border-box;
+}
+.songlist__time{
+    float: left;
+    width: 50px;
+    line-height: 80px;
+    font-size: 14px;
+	box-sizing:border-box;
+}
+/*-----------巅峰榜------------*/
+
+/*-----------下面显示的歌曲10首------------*/
+
+/*-----------歌曲、歌手、时长------------*/

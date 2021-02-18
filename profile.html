@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的音乐</title>
+    <link href="css/singer_list.css" rel="stylesheet" type="text/css">
+    <link href="css/profile.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/new_file.css" />
+    <script type="text/javascript" src="js/action.js" ></script>
+</head>
+<body onLoad="show_profile(1);">
+    <!-- 头部   音乐馆    -->
+		<div class="mod_header">
+   			 <div class="section_inner">
+	       		<h1 class="qqmusic_title"><a href="#"><img src="img/logo3.png" class="qqmusic_logo"/></a></h1>
+	        <!-- 导航 S -->
+		        <ul class="mod_top_nav">
+		            <li class="top_nav__item">
+		                <a href="index.html" class="top_nav__link top_nav__link--current" title="音乐馆">音乐馆</a>
+		            </li>
+		            <li class="top_nav__item">
+		                <a href="profile.html" class="top_nav__link" title="我的音乐">我的音乐</a>
+		            </li> 
+		            <li class="top_nav__item top_nav__item--subnav">
+                <a href="#" class="top_nav__link js_toDownload" title="客户端" >客户端</a>
+                    </li>
+                    <li class="top_nav__item">
+	        <a href="#" data-stat="y_new.top.artists" class="top_nav__link js_nav_click" title="开放平台" >开放平台</a>
+	     			</li>
+	    			<li class="top_nav__item">
+	        <a href="#" class="top_nav__link" title="VIP" >VIP</a>
+	    			</li>
+       			 </ul>
+
+
+		     
+      		  </div>
+        <hr />
+        <!--首页-->
+	        <div  class="top_nav_item2">
+			    <ul class="mod_top_subnav" style="display:;">
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">首页</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="singer_list.html" class="top_subnav__link">歌手</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="toplist.html" class="top_subnav__link">排行榜</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="login.html" class="top_subnav__link">登录</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="/#" class="top_subnav__link">新碟</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">分类歌单</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">电台</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">MV</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">数字专辑</a>
+					</li>
+					<li class="top_subnav__item">
+					    <a href="#" class="top_subnav__link">票务</a>
+					</li>
+			    </ul>
+		    </div>
+	    </div>
+	    
+    <!--登录前内容，登录后隐藏-->
+    <!--<div class="img_s" id="img_s">
+        <img src="images/denglu.png">
+        <a href="login.html">立即登录</a>
+    </div>-->
+    <!--登录后所显示的内容-->
+    <div class="main_1" id="main_1">
+        <!-- 头像图片区-->
+        <div class="mod_profile">
+            <img src="images/bgtp_2.png">
+            <div class="profile_cover_link">
+                <img src="images/touxiang.png">
+            </div>
+            <div class="profile_cover_name">いれい</div>
+            <div class="mod_user_statistic">
+                <div class="mod_user_left">
+                    <a href="">0</a>
+                    <p>关注</p>
+                </div>
+                <div class="mod_user_right">
+                    <a href="">0</a>
+                    <p>粉丝</p>
+                </div>
+            </div>
+            <ul class="profile_nav">
+                <li class="profile_nav_item"><a href="javascript:show_profile(1)" id="nav_item1">我喜欢</a></li>
+                <li class="profile_nav_item"><a href="javascript:show_profile(2)" id="nav_item2">我创建的歌单</a></li>
+                <li class="profile_nav_item"><a href="javascript:show_profile(3)" id="nav_item3">关注</a></li>
+                <li class="profile_nav_item"><a href="javascript:show_profile(4)" id="nav_item4">粉丝</a></li>
+                <li class="profile_nav_item"><a href="javascript:show_profile(5)" id="nav_item5">我创建的视频</a></li>
+            </ul>
+        </div>
+        <!-- 我喜欢-->
+        <div class="main_profile" id="pro1">
+            <div class="mod_tab">
+                <ul class="mod_tab_ul1">
+                    <li class="mod_tab_item"><a href="">歌曲 0</a></li>
+                    <li class="mod_tab_item"><a href="">歌单 0</a></li>
+                    <li class="mod_tab_item"><a href="">专辑 0</a></li>
+                    <li class="mod_tab_item"><a href="">视频 0</a></li>
+                </ul>
+            </div>
+            <div class="mod_songlist_toolbar">
+                <div class="mod_btn1">
+                    <a href="" class="mod_btu_a1">播放全部</a>
+                </div>
+                <div class="mod_btn">
+                    <a href="" class="mod_btu_a2">添加到</a>
+                </div>
+                <div class="mod_btn">
+                    <a href="" class="mod_btu_a3">下载</a>
+                </div>
+                <div class="mod_btn">
+                    <a href="" class="mod_btu_a2">批量操作</a>
+                </div>
+            </div>
+            <div class="mod_songlist">
+                <ul class="songlist_head">
+                    <li class="songlist_head_name">歌曲</li>
+                    <li class="songlist_head_author">歌手</li>
+                    <li class="songlist_head_album">专辑</li>
+                    <li class="songlist_head_time">时长</li>
+                </ul>
+                <ul class="songlist_list"></ul>
+            </div>
+            <p>查看更多内容，请下载客户端</p>
+            <div class="xiazai">
+                <a href="">立即下载</a>
+            </div>
+        </div>
+        <!--我创建的歌单-->
+        <div class="mod_chaungjian_songs" id="pro2">
+            <div class="playlist_toolbar">
+                <button class="mod_creat_new">新建歌单</button>
+                <button class="mod_import">导入歌单</button>
+                <button class="mod_recover">恢复歌单</button>
+            </div>
+            <div class="toolbar_list">
+                <ul class="playlist_header">
+                    <li class="playlist_header_name">歌曲</li>
+                    <li class="playlist_header_number">曲目数</li>
+                    <li class="playlist_header_other">收听</li>
+                </ul>
+            </div>
+            <ul class="playlist_list">
+                <li class="playlist_item">
+                    <div class="playlist_cover">
+                        <img src="images/cover_like.png">
+                    </div>
+                    <div class="playlist_title">
+                        <a href=" ">我喜欢</a>
+                    </div>
+                    <div class="mod_list_menu"></div>
+                    <div class="playlist_number">0首</div>
+                    <div class="playlist_other"></div>
+                </li>
+                <li class="playlist_item">
+                    <div class="playlist_cover">
+                        <img src="images/cover_playlist.png">
+                    </div>
+                    <div class="playlist_title">
+                        <a href=" ">默认列表</a>
+                    </div>
+                    <div class="mod_list_menu"></div>
+                    <div class="playlist_number">0首</div>
+                    <div class="playlist_other"></div>
+                </li>
+            </ul>
+            <p>查看更多内容，请下载客户端</p>
+            <div class="xiazai">
+                <a href="">立即下载</a>
+            </div>
+        </div>
+        <!--关注-->
+        <div class="mod_guanzhu" id="pro3">
+            <ul class="mod_tab_ul2">
+                <li class="mod_tab_geshou">
+                    <a href=" " style="font-size: 16px">歌手</a>
+                </li>
+                <li class="mod_tab_user">
+                    <a href=" " style="font-size: 16px">用户</a>
+                </li>
+                <li class="mod_tab_but">
+                    <button>关注更多歌手</button>
+                </li>
+            </ul>
+            <p>还没有关注...</p>
+        </div>
+        <!--粉丝-->
+        <div class="mod_fensi" id="pro4">
+            <p>还没有粉丝...</p>
+        </div>
+        <!--我上传的视频-->
+        <div class="mod_shangchuan_video" id="pro5">
+            <p>还没有上传的视频...</p>
+        </div>
+    </div>
+      
+</body>
+</html>

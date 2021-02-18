@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册&登录</title>
+	<link rel="stylesheet" href="css/login.css"/>
+	<script type="text/javascript" src="js/login.js" ></script>
+</head>
+<body onload="createRandCode()">
+	<header>
+		<img src="img/logo3.png"/>
+		<ul id="list1">
+			<li><a href="javascript:show(1);">登录</a></li>
+			<li><a href="javascript:show(2);">注册</a></li>
+		</ul>
+	</header>
+	<div id="user">
+		<div id="login" class="lr">
+			<label>用户名：<input type="text" id="loginUserName"/></label>
+			<br />
+			<label>密码：<input type="text" id="loginUserPass"/></label>
+			<br />
+			<label><div id="randcode" onclick="createRandCode()"></div>	
+			<input type="text" id="code"/>
+			</label>			
+			<br />
+			<input type="button" class="button" value="登录" onclick="login()"/>
+		</div>
+		<div id="regist" class="lr">
+			<label>用户名：<input type="text" id="registUserName"/></label>
+			<br />
+			<label>密码：<input type="text" id="registUserPass"/></label>
+			<br />
+			<label>确认密码：<input type="text" id="conformPass"/></label>
+			<br />
+			<input type="button" class="button" value="注册" onclick="regist()"/>
+		</div>
+	</div>
+</body>
+</html>
